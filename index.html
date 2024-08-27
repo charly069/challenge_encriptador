@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Alura ONE</title>
+</head>
+<body>
+    <div class="contenedor">
+      <div class="logo">
+        <img class="logo__Alura" src="imagenes/logo.png">
+        <h1 class="titulo__logo">Encriptador de textos y mensajes</h1>
+      </div>
+      <div class="izquierda">
+        <textarea class="ingreso__texto" id="input__texto" type="text" rows="8" cols="80" placeholder="Ingrese el texto a encriptar"></textarea>
+      </div>
+      <div class="derecha">
+        <img class="imagen__muneco"  id="imagen__muneco"  src="imagenes/muneco.png">
+        <h1 class="texto__muneco" id="texto__muneco">Ningun mensaje fue encontrado - Ingrese el texto que deseas encriptar o desencriptar</h1>
+        <textarea class="texto__encriptar" id="texto__encriptar" rows="8" cols="80"></textarea>
+        <button id="copiar__texto" type="button" name="button" onclick="copiar__texto__suministrado()">Copiar</button>
+      </div>
+      <div class="botones__izquierda">
+        <h1 class="mensaje__minuscula">Solo letras minusculas y sin acentos</h1>
+        <button type="button" id="boton__encriptar" onclick="encriptacion()">Encriptar</button>
+        <button type="button" id="boton__desencriptar" onclick="desencriptacion()">Desencriptar</button>
+      </div>
+    </div>
+</body>
+</html>

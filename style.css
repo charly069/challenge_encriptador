@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+:root{
+    --color-fondo: #9EB8D9;
+    --color-borde: #9EB8D9;
+    --color-izquierda: #EEF5FF;
+    --color-texto-principal: #0B032D;
+    --color-texto-secundario: #522258;  
+    --color-botone-uno: #0B032D;
+    --color-botone-dos: #478CCF;
+
+    --New-Amsterdam: "New Amsterdam", sans-serif;
+    --Playfair-Display: "Playfair Display", serif;
+}
+
+body{
+    background-color: var(--color-borde);
+    box-sizing: border-box;
+
+}
+.contenedor{
+    margin-top: 30px;
+    margin: auto;
+    border-radius: 15px;
+    width: 1240px;
+    height: 600px;
+    padding: 5px;
+    background-color: var(--color-fondo);
+}
+
+.logo{
+    border-radius: 20px;
+    width: 70%;
+    float: left;
+    background: var(--color-fondo);
+}
+
+.izquierda{
+    justify-content: center;
+    display: flex;
+    float: left;
+    width: 70%;
+    height: 60%;
+    border-radius: 20px;
+    background-color: var(--color-fondo);
+    color: var(--color-texto-principal);
+}
+
+.derecha{
+    margin-right: 45px;
+    padding: 30px;
+    width: 20%;
+    float: right;
+    height: 75%;
+    border-radius: 20px;
+    background-color: var(--color-izquierda);
+}
+
+.botones__izquierda{
+    gap: 50%;
+    float: left;
+    width: 70%;
+    height: auto;
+    border-radius: 20px;
+    background-color: var(--color-fondo);
+}
+
+.logo__Alura{
+    margin-top: 2%;
+    margin-left: 2%;
+    float: inherit;
+}
+
+.titulo__logo{
+    font-family: var(--New-Amsterdam);
+    text-align: justify;
+    color: var(--color-texto-principal);
+    margin-left: 10%;
+}
+
+.mensaje__minuscula{
+    font-family: var(--Playfair-Display);
+    color: var(--color-texto-principal);
+    font-size: 20px;
+    margin-left: 10%;
+}
+.ingreso__texto{
+    font-family: var(--Playfair-Display);
+    text-align: start;
+    margin-left: 10%;
+    margin-top: 1%;
+    width: 80%;
+    height: 80%;
+    background-color: var(--color-fondo);
+    color: var(--color-texto-principal);
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+.imagen__muneco{
+    margin-top: 15px;
+    margin-left: 5%;
+    width: 90%;
+    height: auto;
+
+}
+
+.texto__muneco{
+    font-family: var(--Playfair-Display);
+    text-align: justify;
+    color: var(--color-texto-principal);
+    font-size: 15px;
+    margin-left: 9%;
+    margin-right: 9%;
+
+}
+
+.texto__encriptar{
+    font-family: var(--Playfair-Display);
+    font-family: var(--New-Amsterdam);
+    float: left;
+    margin-bottom: 15px;
+    margin-left: 10%;
+    background-color: var(--color-izquierda);
+    color: var(--color-texto-secundario);
+    width: 80%;
+    height: auto;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+#boton__encriptar{
+    font-family: var(--New-Amsterdam);
+    padding: 24px;
+    width: 30%;
+    height: 60%;
+    border-radius: 20px;
+    margin-left: 12%;
+    background-color: var(--color-botone-uno);
+    color: var(--color-izquierda);
+    font-size: 24px;
+}
+
+#boton__desencriptar{
+    font-family: var(--New-Amsterdam);
+    padding: 24px;
+    width: 30%;
+    height: 60%;
+    border-radius: 20px;
+    margin-left: 12%;
+    background-color: var(-color-izquierda);
+    color: var(--color-texto-principal);
+    font-size: 24px;
+}
+
+#copiar__texto{
+    font-family: var(--New-Amsterdam);
+    margin-left: 30%;
+    margin-top: 140%;
+    padding: 30px;
+    width: 40%;
+    height: 10%;
+    background-color: var(--color-botone-uno);
+    color: var(--color-izquierda);
+    border-radius: 20px;
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .contenedor {
+        width: 90%;
+        height: auto;
+    }
+    
+    .logo, .izquierda, .botones__izquierda, .derecha {
+        float: none;
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .derecha {
+        margin-top: 20px;
+        height: auto;
+    }
+
+    .mensaje__minuscula, .ingreso__texto {
+        font-size: 18px;
+    }
+    
+    #boton__encriptar, #boton__desencriptar {
+        width: 45%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor {
+        width: 95%;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .logo, .izquierda, .botones__izquierda, .derecha {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+
+    .logo {
+        width: 100%;
+    }
+    
+    .mensaje__minuscula, .ingreso__texto {
+        font-size: 16px;
+    }
+    
+    #boton__encriptar, #boton__desencriptar {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #copiar__texto {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
